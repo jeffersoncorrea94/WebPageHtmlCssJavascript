@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/principal.css" />
+    <link rel="stylesheet" href="assets/css/galery.css" />
+    <title>Empresa Prueba</title>
+
+    <style>
+      .tarjeta {
+        flex: 1;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+      #about-us {
+        display: flex;
+        height: 20%;
+      }
+
+      #services {
+        display: flex;
+        width: 100%;
+        height: 400px;
+      }
+
+      section #service {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        transition: 0.5s ease;
+      }
+
+      section #service:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+      }
+
+      .texto-invertido {
+        writing-mode: tb-rl;
+        text-orientation: mixed;
+        /* white-space: nowrap; */
+        transform: rotate(-180deg);
+      }
+      .texto-invertido:hover {
+        writing-mode: tb-rl;
+    text-orientation: initial;
+    transform: rotate(-90deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <img id="logo" src="assets/img/logo3.png" alt="Logo Empresarial" />
+      <h1 class="name_company">Mi Sitio Web</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about-us">Nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#imageGallery">Galeria</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <section id="hero">
+        <div>
+          <h2>Bienvenido a Mi Sitio Web</h2>
+          <p>Descubre lo que ofrecemos para ti.</p>
+          <a href="#contact" class="cta-button">Contáctanos</a>
+        </div>
+      </section>
+
+      <section id="services">
+        <div id="service" class="texto-invertido">
+          <h1>Servicio 1</h1>
+        </div>
+        <img id="service" src="assets/galery/imagen1.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen2.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen3.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen4.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen5.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen6.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen7.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen8.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen9.jpeg" alt="" />
+        <img id="service" src="assets/galery/imagen10.jpeg" alt="" />
+        <!-- <div class="service">
+          <h2>Servicio1</h2>
+        </div>
+        <div class="service">
+          <h2>Servicio2</h2>
+        </div>
+        <div class="service">
+          <h2>Servicio3</h2>
+        </div>
+        <div class="service">
+          <h2>Servicio4</h2>
+        </div>
+        <div class="service">
+          <h2>Servicio1</h2>
+        </div> -->
+      </section>
+
+      <section class="image-gallery" id="imageGallery"></section>
+    </div>
+
+    <section id="about-us">
+      <div id="tarjetaMision" class="tarjeta visible">
+        <h2>Misión</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi iusto
+          praesentium ipsum illo saepe porro fugit, consectetur, harum fugiat
+          vitae quaerat ducimus ratione optio! Dignissimos eaque aspernatur aut?
+          Neque.
+        </p>
+      </div>
+
+      <div id="tarjetaVision" class="tarjeta">
+        <h2>Visión</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          laudantium sunt ab repudiandae modi? Quos doloribus ipsam ad porro
+          animi exercitationem rem ab! Reiciendis, quidem? Repudiandae aperiam
+          quos cumque commodi?
+        </p>
+      </div>
+
+      <div id="tarjetaHistoria" class="tarjeta">
+        <h2>Historia</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          fugit eos laboriosam pariatur corrupti laborum ducimus minus quos
+          eveniet ullam consectetur commodi repellendus explicabo ea, dolore
+          dolorem ipsum animi ipsam!
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="assets/js/galery.js"></script>
+  </body>
+</html>
