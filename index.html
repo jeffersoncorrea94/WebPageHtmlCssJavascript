@@ -23,7 +23,7 @@
       #services {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: 500px;
       }
 
       section #service {
@@ -38,18 +38,36 @@
         width: 300px;
         opacity: 1;
         filter: contrast(120%);
+        .tittle-service {
+          height: 10%;
+          writing-mode: revert;
+          text-orientation: revert;
+          transform: revert;
+        }
+        #description-services {
+          display: inline;
+        }
       }
 
-      .texto-invertido {
+      .tittle-service {
+        height: 100%;
         writing-mode: tb-rl;
         text-orientation: mixed;
-        /* white-space: nowrap; */
         transform: rotate(-180deg);
       }
-      .texto-invertido:hover {
-        writing-mode: tb-rl;
-    text-orientation: initial;
-    transform: rotate(-90deg);
+
+      #description-services {
+        display: none;
+      }
+
+      #service {
+        background: linear-gradient(to right, #f09541, #f08741);
+        padding: 10px;
+        border: solid #000;
+        border-radius: 5px;
+      }
+      .content {
+        padding: 10px;
       }
     </style>
   </head>
@@ -69,85 +87,145 @@
       </nav>
     </header>
 
-    <div class="main-content">
-      <section id="hero">
-        <div>
-          <h2>Bienvenido a Mi Sitio Web</h2>
-          <p>Descubre lo que ofrecemos para ti.</p>
-          <a href="#contact" class="cta-button">Contáctanos</a>
-        </div>
-      </section>
+    <div class="content">
+      <div class="main-content">
+        <section id="hero">
+          <div>
+            <h2>Bienvenido a Mi Sitio Web</h2>
+            <p>Descubre lo que ofrecemos para ti.</p>
+            <a href="#contact" class="cta-button">Contáctanos</a>
+          </div>
+        </section>
 
-      <section id="services">
-        <div id="service" class="texto-invertido">
-          <h1>Servicio 1</h1>
-        </div>
-        <img id="service" src="assets/galery/imagen1.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen2.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen3.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen4.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen5.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen6.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen7.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen8.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen9.jpeg" alt="" />
-        <img id="service" src="assets/galery/imagen10.jpeg" alt="" />
-        <!-- <div class="service">
-          <h2>Servicio1</h2>
-        </div>
-        <div class="service">
-          <h2>Servicio2</h2>
-        </div>
-        <div class="service">
-          <h2>Servicio3</h2>
-        </div>
-        <div class="service">
-          <h2>Servicio4</h2>
-        </div>
-        <div class="service">
-          <h2>Servicio1</h2>
-        </div> -->
-      </section>
+        <section id="services">
+          <div id="service">
+            <div class="tittle-service">
+              <h1>Servicio 1</h1>
+            </div>
+            <div id="description-services">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vitae earum incidunt harum recusandae sint architecto
+              voluptatibus, quaerat suscipit impedit cupiditate rem, dolorem
+              repellat, fugiat iste ex quia autem placeat.
+            </div>
+          </div>
+          <div id="service">
+            <div class="tittle-service">
+              <h1>Servicio 2</h1>
+            </div>
+            <div id="description-services">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vitae earum incidunt harum recusandae sint architecto
+              voluptatibus, quaerat suscipit impedit cupiditate rem, dolorem
+              repellat, fugiat iste ex quia autem placeat.
+            </div>
+          </div>
+          <div id="service">
+            <div class="tittle-service">
+              <h1>Servicio 3</h1>
+            </div>
+            <div id="description-services">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vitae earum incidunt harum recusandae sint architecto
+              voluptatibus, quaerat suscipit impedit cupiditate rem, dolorem
+              repellat, fugiat iste ex quia autem placeat.
+            </div>
+          </div>
+          <div id="service">
+            <div class="tittle-service">
+              <h1>Servicio 4</h1>
+            </div>
+            <div id="description-services">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vitae earum incidunt harum recusandae sint architecto
+              voluptatibus, quaerat suscipit impedit cupiditate rem, dolorem
+              repellat, fugiat iste ex quia autem placeat.
+            </div>
+          </div>
+          <div id="service">
+            <div class="tittle-service">
+              <h1>Servicio 5</h1>
+            </div>
+            <div id="description-services">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vitae earum incidunt harum recusandae sint architecto
+              voluptatibus, quaerat suscipit impedit cupiditate rem, dolorem
+              repellat, fugiat iste ex quia autem placeat.
+            </div>
+          </div>
+          <div id="service">
+            <div class="tittle-service">
+              <h1>Servicio 6</h1>
+            </div>
+            <div id="description-services">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vitae earum incidunt harum recusandae sint architecto
+              voluptatibus, quaerat suscipit impedit cupiditate rem, dolorem
+              repellat, fugiat iste ex quia autem placeat.
+            </div>
+          </div>
+        </section>
 
-      <section class="image-gallery" id="imageGallery"></section>
+        <section class="image-gallery" id="imageGallery"></section>
+
+        <section id="about-us">
+          <div id="tarjetaMision" class="tarjeta visible">
+            <h2>Misión</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi
+              iusto praesentium ipsum illo saepe porro fugit, consectetur, harum
+              fugiat vitae quaerat ducimus ratione optio! Dignissimos eaque
+              aspernatur aut? Neque.
+            </p>
+          </div>
+
+          <div id="tarjetaVision" class="tarjeta">
+            <h2>Visión</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate laudantium sunt ab repudiandae modi? Quos doloribus
+              ipsam ad porro animi exercitationem rem ab! Reiciendis, quidem?
+              Repudiandae aperiam quos cumque commodi?
+            </p>
+          </div>
+
+          <div id="tarjetaHistoria" class="tarjeta">
+            <h2>Historia</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              fugit eos laboriosam pariatur corrupti laborum ducimus minus quos
+              eveniet ullam consectetur commodi repellendus explicabo ea, dolore
+              dolorem ipsum animi ipsam!
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
-
-    <section id="about-us">
-      <div id="tarjetaMision" class="tarjeta visible">
-        <h2>Misión</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A sequi iusto
-          praesentium ipsum illo saepe porro fugit, consectetur, harum fugiat
-          vitae quaerat ducimus ratione optio! Dignissimos eaque aspernatur aut?
-          Neque.
-        </p>
-      </div>
-
-      <div id="tarjetaVision" class="tarjeta">
-        <h2>Visión</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          laudantium sunt ab repudiandae modi? Quos doloribus ipsam ad porro
-          animi exercitationem rem ab! Reiciendis, quidem? Repudiandae aperiam
-          quos cumque commodi?
-        </p>
-      </div>
-
-      <div id="tarjetaHistoria" class="tarjeta">
-        <h2>Historia</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          fugit eos laboriosam pariatur corrupti laborum ducimus minus quos
-          eveniet ullam consectetur commodi repellendus explicabo ea, dolore
-          dolorem ipsum animi ipsam!
-        </p>
-      </div>
-    </section>
 
     <footer class="site-footer">
       <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          console.log("xjbc<zjc");
+          e.preventDefault();
 
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            const headerHeight = document.querySelector("header").offsetHeight;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
     <script src="assets/js/galery.js"></script>
   </body>
 </html>
