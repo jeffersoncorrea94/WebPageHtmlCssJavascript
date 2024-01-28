@@ -6,70 +6,6 @@
     <link rel="stylesheet" href="assets/css/principal.css" />
     <link rel="stylesheet" href="assets/css/galery.css" />
     <title>Empresa Prueba</title>
-
-    <style>
-      .tarjeta {
-        flex: 1;
-        border: 1px solid #000;
-        box-sizing: border-box;
-        padding: 10px;
-      }
-
-      #about-us {
-        display: flex;
-        height: 20%;
-      }
-
-      #services {
-        display: flex;
-        width: 100%;
-        height: 500px;
-      }
-
-      section #service {
-        width: 0px;
-        flex-grow: 1;
-        object-fit: cover;
-        transition: 0.5s ease;
-      }
-
-      section #service:hover {
-        cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);
-        .tittle-service {
-          height: 10%;
-          writing-mode: revert;
-          text-orientation: revert;
-          transform: revert;
-        }
-        #description-services {
-          display: inline;
-        }
-      }
-
-      .tittle-service {
-        height: 100%;
-        writing-mode: tb-rl;
-        text-orientation: mixed;
-        transform: rotate(-180deg);
-      }
-
-      #description-services {
-        display: none;
-      }
-
-      #service {
-        background: linear-gradient(to right, #f09541, #f08741);
-        padding: 10px;
-        border: solid #000;
-        border-radius: 5px;
-      }
-      .content {
-        padding: 10px;
-      }
-    </style>
   </head>
 
   <body>
@@ -156,6 +92,17 @@
           <div id="service">
             <div class="tittle-service">
               <h1>Servicio 6</h1>
+            </div>
+            <div id="description-services">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vitae earum incidunt harum recusandae sint architecto
+              voluptatibus, quaerat suscipit impedit cupiditate rem, dolorem
+              repellat, fugiat iste ex quia autem placeat.
+            </div>
+          </div>
+          <div id="service">
+            <div class="tittle-service">
+              <h1>Servicio 7</h1>
             </div>
             <div id="description-services">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
